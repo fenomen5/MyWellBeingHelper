@@ -42,3 +42,6 @@ SQLite3
 ### View body params graph
 ![](graphics/images/personal_graph.png)
 
+## Legal Disclaimer
+All rights reserved
+All used images are the property of their respective owners.
