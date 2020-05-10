@@ -1,6 +1,6 @@
 # MyWellBeingHelper
 
-The application uses offline SQLite database to store information about sport clubs and events.
+The application that uses offline database to store information about sport clubs and events.
 
 This application is a personal helper in the development of user's own healthy lifestyle.\
 Providing information about activity évents and wellness centers, it helps to increase the body energy of a user. The user can also log personal body self-care parameters to assess his progress such as blood pressure, number of daily steps, heart rate, glucose level, and weight.
