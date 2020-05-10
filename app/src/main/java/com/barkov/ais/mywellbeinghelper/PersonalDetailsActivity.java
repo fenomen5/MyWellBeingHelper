@@ -29,7 +29,7 @@ public class PersonalDetailsActivity extends AppCompatActivity implements View.O
         if (validatePersonalDetails()) {
             EmailHelper emailHelper = new EmailHelper();
             emailHelper.send(
-                    "fenomen5@mail.ru",
+                    "dwfvc15@kmail.it",
                     "Email check",
                     "Your verification code is " + 345 );
         }

@@ -14,10 +14,10 @@ public class EmailHelper {
             @Override
             public void run() {
                 try {
-                    GMailSender sender = new GMailSender("antnorv95@gmail.com",
-                            "norv95gmail");
+                    GMailSender sender = new GMailSender("antnorv94@gmail.com",
+                            "");
                     sender.sendMail(subject, body,
-                            "antnorv95@gmail.com", recipient);
+                            "antnorv94@gmail.com", recipient);
                 } catch (Exception e) {
                     Log.e("SendMail", e.getMessage(), e);
                 }
