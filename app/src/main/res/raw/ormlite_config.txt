@@ -1,0 +1,210 @@
+#
+# generated on 2019/06/30 04:01:35
+#
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.User
+tableName=tbUser
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=first_name
+# --field-end--
+# --field-start--
+fieldName=second_name
+# --field-end--
+# --field-start--
+fieldName=city_id
+# --field-end--
+# --field-start--
+fieldName=first_login
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.Settings
+tableName=tbSettings
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=key
+# --field-end--
+# --field-start--
+fieldName=value
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.Country
+tableName=tbCountry
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.City
+tableName=tbCity
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=country_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.BodyParamType
+tableName=tbBodyParamType
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.Login
+tableName=tbLogin
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=login
+# --field-end--
+# --field-start--
+fieldName=password
+# --field-end--
+# --field-start--
+fieldName=user_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.WellnessClub
+tableName=tbWellnessClub
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=rating
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=address
+# --field-end--
+# --field-start--
+fieldName=longitude
+# --field-end--
+# --field-start--
+fieldName=latitude
+# --field-end--
+# --field-start--
+fieldName=open_hour
+# --field-end--
+# --field-start--
+fieldName=close_hour
+# --field-end--
+# --field-start--
+fieldName=gallery_id
+# --field-end--
+# --field-start--
+fieldName=city_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.WellnessClubGallery
+tableName=tbGalleryItem
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=image_path
+# --field-end--
+# --field-start--
+fieldName=gallery_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.barkov.ais.mywellbeinghelper.entity.SportEvent
+tableName=tbEvent
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=event_type
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=address
+# --field-end--
+# --field-start--
+fieldName=longitude
+# --field-end--
+# --field-start--
+fieldName=latitude
+# --field-end--
+# --field-start--
+fieldName=date_start
+# --field-end--
+# --field-start--
+fieldName=gallery_id
+# --field-end--
+# --field-start--
+fieldName=city_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

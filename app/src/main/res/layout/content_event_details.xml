@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EventDetailsActivity"
+    tools:showIn="@layout/activity_event_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtAddressSelectedEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblStartDateSelectedEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:text="TextView"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblEventGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Event Gallery"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="26sp" />
+
+        <ImageSwitcher
+            android:id="@+id/imgSwSelectedEvent"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop">
+
+        </ImageSwitcher>
+
+        <TextView
+            android:id="@+id/lblEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            android:text="Event Description"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/lblDescriptionSelectedEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/lblEventLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            android:text="Event Location"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="26sp" />
+
+        <com.barkov.ais.mywellbeinghelper.google.map.ScrollGoogleMap
+            android:id="@+id/mapViewSelectedEvent"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

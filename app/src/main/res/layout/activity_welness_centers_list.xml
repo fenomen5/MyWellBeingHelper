@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelnessCentersListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_gravity="end"
+        android:background="@color/colorBackgroundGreen"
+        android:baselineAligned="true"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="25dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/simple_semi_round_right_btn"
+            android:baselineAligned="true"
+            android:gravity="center"
+            android:onClick="displaySearchDialog"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblSearchParams"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:background="@drawable/simple_round_btn"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/add_data"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/much_round_quad_btn"
+                android:foreground="@drawable/ic_search"
+                android:onClick="displaySearchDialog" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listWelnessCenters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

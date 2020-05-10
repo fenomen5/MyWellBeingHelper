@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGreen"
+    android:orientation="vertical"
+    android:theme="@style/FullscreenTheme"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+
+        android:clickable="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_account_box_black_24dp"
+        app:backgroundTint="#EEFF41"
+        app:maxImageSize="40dp"
+        app:srcCompat="@color/control_overlay" />
+
+    <Button
+        android:id="@+id/btnClubs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:height="60dp"
+        android:background="@drawable/much_round_btn"
+        android:text="Wellness clubs" />
+
+    <Button
+        android:id="@+id/btnActivities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:height="60dp"
+        android:background="@drawable/much_round_btn"
+        android:text="Sport events" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBodyParams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:height="60dp"
+            android:background="@drawable/much_round_btn"
+            android:text="My parameters" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:background="@drawable/much_round_btn"
+            android:text="About" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ClubDetailsActivity"
+    tools:showIn="@layout/activity_club_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBarSelectedClub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:indeterminate="false"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:progressTint="#EEFF41"
+            android:secondaryProgressTint="#FFFF00" />
+
+        <TextView
+            android:id="@+id/txtAddressSelectedClub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblWorkingHoursSelectedClub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:text="TextView"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblClubGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Club Gallery"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="26sp" />
+
+        <ImageSwitcher
+            android:id="@+id/imgSwSelectedClub"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop">
+
+        </ImageSwitcher>
+
+        <TextView
+            android:id="@+id/lblClubDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            android:text="Club Description"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/lblDescriptionSelectedClub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/lblClubLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            android:text="Club Location"
+            android:textColor="@color/colorBackgroundGreen"
+            android:textSize="26sp" />
+
+        <com.barkov.ais.mywellbeinghelper.google.map.ScrollGoogleMap
+            android:id="@+id/mapViewSelectedClub"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
